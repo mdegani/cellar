@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require("../xapp");
+var app = require("../app");
 var debug = require("debug")("cellar:server");
 var http = require("http");
 
