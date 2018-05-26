@@ -23,9 +23,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+// if (process.env.NODE_ENV === "production") {
+app.use(express.static("client/build"));
+// }
+
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
-app.use("/names", namesRouter);
+app.use("/api/users", usersRouter);
+app.use("/api/names", namesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
