@@ -1,1 +1,1 @@
-cd client && npm run build && cd .. && npm start
+cd client && npm i && npm run build && cd .. && npm start
