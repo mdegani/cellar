@@ -6,6 +6,7 @@
     "dev": "concurrently \"npm start\" \"npm run client\"",
     "client": "node start-client.js",
     "start": "node ./bin/www",
+    "bean": "chmod +x bean.sh && ./bean.sh",
     "test": "jest"
   },
   "dependencies": {

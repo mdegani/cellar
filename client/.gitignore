@@ -7,7 +7,8 @@
 /coverage
 
 # production
-/build
+# normally we'd just have the build get built
+# /build
 
 # misc
 .DS_Store
